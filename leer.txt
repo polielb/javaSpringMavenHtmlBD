@@ -1,0 +1,11 @@
+
+probar el codigo en cmd
+mvn clean package
+mvn spring-boot:run                                          
+
+http://localhost:8080/
+
+luego desplegar
+docker build -t holamundoapp2 .
+docker run -d -p 8099:8080 --name holamundo2 holamundoapp2
+
